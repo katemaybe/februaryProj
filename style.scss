@@ -1,0 +1,15 @@
+//absctract
+@import './scss/abstract/vars';
+//base
+@import './scss/base/fonts';
+@import './scss/base/global';
+//components
+
+//layouts
+@import './scss/layouts/header';
+@import './scss/layouts/footer';
+//section
+@import './scss/sections/banner';
+@import './scss/sections/team';
+@import './scss/sections/benefits';
+@import './scss/sections/callToAction';

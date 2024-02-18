@@ -1,0 +1,24 @@
+html {
+    font-size: 10px;
+}
+
+.wrapper {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: $font_main;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $c-black;
+    background-color: $c-silver;
+}
+
+.container {
+max-width: 124rem;
+padding: 0 1.5rem;
+width: 100%;
+margin: 0 auto;
+}
+
