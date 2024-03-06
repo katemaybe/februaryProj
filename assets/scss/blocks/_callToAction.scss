@@ -1,0 +1,29 @@
+.action__inner {
+    @extend .container;
+    margin-top: 2rem;
+    height: 42rem;
+    border-radius: 3.2rem;
+    background-color: $c-grey;
+    text-align: center;
+    h2{
+        font-weight: bold;
+        font-size: 5.6rem;
+        color: $c-silver;
+        line-height: 6.4rem;
+        padding-top: 11.6rem;
+         }
+         p{
+            line-height: 2.4rem;
+            color: $c-silver;
+            margin: 2rem;
+        }
+}
+
+.sec__btn {
+    background-color: $c-yellow;
+    width: 14.5rem;
+    height: 5.2rem;
+    border-radius: 3.2rem;
+    margin-bottom: 11.6rem;
+    @include adaptive-font(20)
+}

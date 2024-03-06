@@ -1,0 +1,23 @@
+@import "vendor/reset";
+@import "vendor/include-media";
+
+@import "core/fonts";
+@import "core/mixins";
+@import "core/variables";
+
+
+
+@import "layout/layout";
+@import "layout/header";
+@import "layout/footer";
+
+//@import "blocks/banner-hero";
+//@import "blocks/banner-img";
+@import "blocks/banner";
+@import "blocks/benefits";
+@import "blocks/callToAction";
+@import "blocks/team" ;
+
+
+
+

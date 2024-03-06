@@ -1,0 +1,59 @@
+.header__inner{
+    @extend .container;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.9rem;
+}
+
+.breadcrumbs{
+    display: none;
+    @include media('<desktop'){
+        display:block;
+    }
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4.9rem;
+    list-style-type: none;
+    @include media('<desktop'){
+        display:none;
+    }
+    
+}
+
+.menu__link {
+    text-decoration: none; 
+    cursor: pointer;  
+    color: $c-black;
+}
+
+.member__link {
+    text-decoration: none;  
+    color: $c-black;
+    @include media('<desktop'){
+        display:none;
+    }
+}
+.nav__member{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.9rem;
+}
+.nav__btn {
+background-color: $c-grey;
+border-radius: 10rem;
+font-size: 1.4rem;
+color: $c-silver;
+padding: 0.8rem 3rem;
+cursor: pointer;
+@include media('<desktop'){
+    display:none;
+}
+
+}

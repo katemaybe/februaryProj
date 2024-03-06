@@ -1,0 +1,72 @@
+.banner {
+    padding-top: 17rem;
+    
+
+  
+}
+.banner__inner {
+    @extend .container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    @include media('<tablet'){
+        width: 80%;
+        justify-content: space-around;
+    }
+}
+
+.banner__title {
+    font-weight: bold;
+    font-size: 7.2rem;
+    line-height: 8rem;
+    color: $c-grey;
+    text-align: left;
+    @include media('<tablet'){
+        font-size: 3.2rem;
+        line-height: 4rem;
+        width: 100%;
+    }
+
+}
+.banner__title em {
+    color: $c-yellow;
+    font-style: normal; 
+}
+
+// @media screen and (max-width: 479px) {
+//     .banner {
+//         padding-top: 1rem;
+    
+      
+//     }
+//     .bannerBox {
+//         width: 80%;
+//         justify-content: space-around;
+        
+//     }
+//     .title {
+//     }
+//     .banner__title {
+        
+//         font-size: 3.2rem;
+//         line-height: 4rem;
+//         width: 100%;
+    
+//     }
+    .ellipse__img {
+        @include media('<tablet'){
+            margin-left: 6rem;
+            width: 10.2rem;
+           height: 10.2rem;
+        }
+       
+    }
+    .banner__ellipse {
+        @include media('<tablet'){
+        width: 30%;
+        align-self: end;
+        }
+       
+    }
+    
+  

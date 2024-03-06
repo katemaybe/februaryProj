@@ -1,0 +1,43 @@
+//::-webkit-scrollbar {
+//    width: 7px;
+//}
+//
+//::-webkit-scrollbar-thumb {
+//    border-radius: 10px;
+//    background-color: rgba($c-bg-secondary, .25);
+//}
+//
+
+body {
+    background-color: $c-bg-primary;
+    overflow-x: hidden;
+    font-family: $font-primary;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $c-black;
+    background-color: $c-silver;
+
+    &.is-modal-open {
+        overflow: hidden;
+        max-height: 100vh;
+    }
+
+}
+
+html {
+    font-size: 10px;
+}
+
+.wrapper {
+    overflow-x: hidden;
+}
+
+
+.container {
+max-width: 124rem;
+padding: 0 1.5rem;
+width: 100%;
+margin: 0 auto;
+}
+
