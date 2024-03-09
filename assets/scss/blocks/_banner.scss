@@ -7,20 +7,23 @@
 .banner__inner {
     @extend .container;
     display: flex;
-    justify-content: space-between;
+    gap:15rem;
+    // justify-content: space-between;
     align-items: center; 
     @include media('<tablet'){
         width: 80%;
+        gap:5rem;
         justify-content: space-around;
     }
 }
 
 .banner__title {
     font-weight: bold;
-    font-size: 7.2rem;
-    line-height: 8rem;
+    font-size: 72px;
+    line-height: 7.5rem;
     color: $c-grey;
     text-align: left;
+    letter-spacing: -2.5%;
     @include media('<tablet'){
         font-size: 3.2rem;
         line-height: 4rem;
@@ -28,9 +31,18 @@
     }
 
 }
+
+.banner__container {
+    max-width: 82rem;
+    // height: 15rem;
+}
 .banner__title em {
     color: $c-yellow;
     font-style: normal; 
+}
+
+.team__section {
+    padding-bottom: 6.7rem;
 }
 
 // @media screen and (max-width: 479px) {
@@ -55,7 +67,7 @@
 //     }
     .ellipse__img {
         @include media('<tablet'){
-            margin-left: 6rem;
+            // margin-left: 6rem;
             width: 10.2rem;
            height: 10.2rem;
         }

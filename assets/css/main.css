@@ -98,12 +98,18 @@ html {
   width: 100%;
   margin: 0 auto; }
 
+.header__inner {
+  padding: 2rem; }
+
 .nav {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  gap: 1.9rem; }
+  gap: 3rem; }
+
+.member__container {
+  width: 156px; }
 
 .breadcrumbs {
   display: none; }
@@ -112,10 +118,11 @@ html {
       display: block; } }
 
 .menu {
+  margin-right: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 4.9rem;
+  gap: 1.9rem;
   list-style-type: none; }
   @media (max-width: 1024px) {
     .menu {
@@ -126,9 +133,14 @@ html {
   cursor: pointer;
   color: #121212; }
 
+.menu__link:hover {
+  color: #FFB84C;
+  transition-duration: .2s; }
+
 .member__link {
   text-decoration: none;
-  color: #121212; }
+  color: #121212;
+  margin-top: 2rem; }
   @media (max-width: 1024px) {
     .member__link {
       display: none; } }
@@ -136,23 +148,37 @@ html {
 .nav__member {
   display: flex;
   justify-content: space-between;
-  gap: 1.9rem; }
+  align-items: center;
+  justify-content: center;
+  width: 30rem;
+  gap: 1rem;
+  width: 30rem; }
+  @media (max-width: 1024px) {
+    .nav__member {
+      width: 5rem; } }
 
 .nav__btn {
   background-color: #2B2730;
-  border-radius: 10rem;
+  border-radius: 6.25rem;
   font-size: 1.4rem;
   color: #f6f6f6;
-  padding: 0.8rem 3rem;
-  cursor: pointer; }
+  cursor: pointer;
+  width: 11rem;
+  height: 5rem; }
   @media (max-width: 1024px) {
     .nav__btn {
       display: none; } }
 
+.nav__btn:hover {
+  color: #FFB84C;
+  transition-duration: .2s; }
+
 .footer__inner {
+  padding-top: 7.25rem;
+  padding-bottom: 7.25rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   flex-flow: row wrap; }
   @media (max-width: 1024px) {
     .footer__inner {
@@ -162,8 +188,8 @@ html {
 .footer__socials {
   width: 22rem; }
 
-.logo {
-  padding: 5rem;
+.logo-bottom {
+  padding-bottom: 10rem;
   float: left; }
 
 .footer__logo {
@@ -221,32 +247,39 @@ html {
 
 .banner__inner {
   display: flex;
-  justify-content: space-between;
+  gap: 15rem;
   align-items: center; }
   @media (max-width: 767px) {
     .banner__inner {
       width: 80%;
+      gap: 5rem;
       justify-content: space-around; } }
 
 .banner__title {
   font-weight: bold;
-  font-size: 7.2rem;
-  line-height: 8rem;
+  font-size: 72px;
+  line-height: 7.5rem;
   color: #2B2730;
-  text-align: left; }
+  text-align: left;
+  letter-spacing: -2.5%; }
   @media (max-width: 767px) {
     .banner__title {
       font-size: 3.2rem;
       line-height: 4rem;
       width: 100%; } }
 
+.banner__container {
+  max-width: 82rem; }
+
 .banner__title em {
   color: #FFB84C;
   font-style: normal; }
 
+.team__section {
+  padding-bottom: 6.7rem; }
+
 @media (max-width: 767px) {
   .ellipse__img {
-    margin-left: 6rem;
     width: 10.2rem;
     height: 10.2rem; } }
 
@@ -258,8 +291,8 @@ html {
 .benefits__group {
   padding-top: 5rem;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+  align-items: start;
   flex-flow: row wrap;
   gap: 2rem; }
   @media (max-width: 1024px) {
@@ -273,7 +306,11 @@ html {
         font-size: 0.875rem; } }
 
 .benefits__creator {
-  max-width: 37.75rem; }
+  max-width: 37.75rem;
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+  gap: 2rem; }
 
 .benefits__text {
   margin-bottom: 1.5rem;
@@ -320,6 +357,13 @@ html {
   font-size: 2.4rem;
   font-weight: bold; }
 
+.nav__btn {
+  width: 182px;
+  height: 52px;
+  border-radius: 32px; }
+  .nav__btn p {
+    font-size: 14px; }
+
 .action__inner {
   margin-top: 2rem;
   height: 42rem;
@@ -359,17 +403,22 @@ html {
 .tablet {
   width: 100%;
   margin-top: 3rem;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 7.3rem; }
   @media (max-width: 767px) {
     .tablet {
       width: 100%;
       align-items: center; } }
+
+.container-team__title {
+  max-width: 77rem; }
 
 .team__title {
   font-size: 6.4rem;
   color: #f6f6f6;
   font-weight: bold;
   letter-spacing: -0.25rem;
+  line-height: 7.5rem;
   text-align: initial; }
   @media (max-width: 767px) {
     .team__title {
@@ -383,6 +432,8 @@ html {
   font-style: normal; }
 
 .team__members {
+  padding-top: 7.25rem;
+  padding-bottom: 7.2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -398,8 +449,7 @@ html {
 .team__numbers {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  gap: 1.9rem; }
+  gap: 1.7rem; }
   @media (max-width: 1024px) {
     .team__numbers {
       flex-flow: row wrap;
@@ -407,21 +457,17 @@ html {
 
 .numbers__left {
   display: flex;
+  width: 703px;
   justify-content: space-between;
-  align-items: center;
-  gap: 1.9rem; }
+  gap: 3rem; }
   @media (max-width: 1024px) {
     .numbers__left {
       flex-flow: row wrap;
       gap: 1rem;
       margin-left: 5rem; } }
 
-.numbers__element {
-  width: 30rem; }
-
 .number {
-  color: #FFB84C;
-  text-align: center; }
+  color: #FFB84C; }
   @media (max-width: 767px) {
     .number {
       font-size: 4rem;
@@ -429,19 +475,20 @@ html {
 
 .numbers__text {
   font-size: 3.2rem;
-  color: #f6f6f6;
-  text-align: center; }
+  color: #f6f6f6; }
   @media (max-width: 767px) {
     .numbers__text {
       font-size: 1.6rem;
       line-height: 2.4rem; } }
 
+.numbers__element {
+  max-width: 213px; }
+
 .numbers__right {
   width: 29.5rem;
-  height: 8rem;
   display: flex;
   gap: 2rem;
-  align-items: center; }
+  align-items: end; }
   @media (max-width: 767px) {
     .numbers__right {
       margin: 0 auto; } }

@@ -27,11 +27,14 @@
                         </li>
                     </ul>
                     <div class="nav__member">
-                        <ul class="member">
-                            <li class="member__item">
-                                <a href="" class="member__link">Become a member</a>
-                            </li>
-                        </ul>
+                        <div class="member__container">
+                            <ul class="member">
+                                <li class="member__item">
+                                    <a href="" class="member__link">Become a member</a>
+                                </li>
+                            </ul>
+                        </div>
+            
                         <button class="nav__btn btn" type="button">Sign in</button>
                     <img src="./img/icon/menu-3.svg" alt="" class="breadcrumbs">
 
@@ -44,8 +47,11 @@
         <main>
             <section class="banner">
                 <div class="banner__inner">
-                    <h1 class="title banner__title">Learn from your 
-                            favorite creators <em>about fantasy reports</em></h1>  
+                    <div class="banner__container">
+                        <h1 class="title banner__title">Learn from your 
+                            favorite creators <em>about fantasy reports</em></h1> 
+                    </div>
+                     
                     <div class="banner__ellipse">
                             <img src="img/home-elem.png" alt="ellipseImg" class="ellipse__img" loading="lazy">
                     </div>
@@ -60,40 +66,51 @@
                         <div class="image-container">
                             <img src="img/tablet.png" alt="bannerTablet" class="tablet" > 
                         </div>
-                    <h2 class="title team__title"> <em>Get direct</em> <br> knowledge and insight.</h2>
-                    <div class="team__members">
-                        <div class="team__member">
-                            <img src="img/team1.png" alt="" class="team-card__img" loading="lazy">
+
+                        <div class="container-team__title">
+                            <h2 class="title team__title"> <em>Get direct</em> <br> knowledge and insight.</h2>
                         </div>
-                        <div class="team__member">
-                            <img src="img/team2.png" alt="" class="team-card__img" loading="lazy">
+
+                        <div class="team__section">
+                            <div class="team__members">
+                                <div class="team__member">
+                                    <img src="img/team1.png" alt="" class="team-card__img" loading="lazy">
+                                </div>
+                                <div class="team__member">
+                                    <img src="img/team2.png" alt="" class="team-card__img" loading="lazy">
+                                </div>
+                                <div class="team__member">
+                                    <img src="img/team3.png" alt="" class="team-card__img" loading="lazy">
+                                </div>
+                            </div>
+                         <div class="team__numbers">
+                            <div class="numbers__left">
+                                <div class="numbers__element">
+                                    <h2 class="number">300</h2>
+                                    <h4 class="numbers__text">creators</h2>
+                                </div>
+                                <div class="numbers__element">
+                                    <h2 class="number">14.4k</h2>
+                                    <h4 class="numbers__text">users</h2>
+                                </div>
+                                <div class="numbers__element">
+                                    <h2 class="number">9.11k</h2>
+                                    <h4 class="numbers__text">sessions</h2>
+                                </div>
+                            </div>
+                            <div class="numbers__right">
+                                <div class="arrow">
+                                    <a href="" class="arrow_btn">Explore the marketplace</a>
+                                </div>
+
+                                <div class="btn__numbers">
+                                    <img src="./img/arrow-icon.svg" alt="" class="marketPlace">
+                                </div>
+                                
+                            </div>
+                         </div>
                         </div>
-                        <div class="team__member">
-                            <img src="img/team3.png" alt="" class="team-card__img" loading="lazy">
-                        </div>
-                    </div>
-                 <div class="team__numbers">
-                    <div class="numbers__left">
-                        <div class="numbers__element">
-                            <h2 class="number">300</h2>
-                            <h4 class="numbers__text">creators</h2>
-                        </div>
-                        <div class="numbers__element">
-                            <h2 class="number">14.4k</h2>
-                            <h4 class="numbers__text">users</h2>
-                        </div>
-                        <div class="numbers__element">
-                            <h2 class="number">9.11k</h2>
-                            <h4 class="numbers__text">sessions</h2>
-                        </div>
-                    </div>
-                    <div class="numbers__right">
-                        <div class="arrow">
-                            <a href="" class="arrow_btn">Explore the marketplace</a>
-                        </div>
-                        <img src="./img/arrow-icon.svg" alt="" class="marketPlace">
-                    </div>
-                 </div>
+                    
                     </div>
             </section>
             <section class="benefits">
@@ -102,7 +119,7 @@
                         <div class="benefits__creator">
                             <h3 class="benefits__text">Why become a creator?</h2>
                             <h5 class="creator__text">Engage with your supporter and subscriber to sell your skills, knowledge and passions </h2>
-                            <button class="nav__btn btn" type="button">Become a creator</button>
+                            <button class="nav__btn btn" type="button"><p>Become a creator</p></button>
                         </div>
                         <div class="creator__features">
                             <div class="first__row">
@@ -147,7 +164,7 @@
             <div class="footer__inner">
                 <div class="footer__socials">
                     <div class="footer__logo">
-                        <a href="" class="logo">
+                        <a href="" class="logo-bottom">
                             <img src="img/logo.svg" alt="logotype" class="logo__img" width="93" height="24" loading="lazy">
                         </a>
                     </div>

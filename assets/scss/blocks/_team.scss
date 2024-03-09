@@ -13,11 +13,16 @@
     width: 100%;
     margin-top: 3rem;
     text-align: center;
+    padding-bottom: 7.3rem;
 
     @include media('<tablet'){
         width: 100%;
         align-items: center;
     }
+}
+
+.container-team__title{
+max-width: 77rem;
 }
 .team__title {
     
@@ -25,6 +30,7 @@
     color:$c-silver;
     font-weight: bold;
     letter-spacing: -0.25rem;
+    line-height: 7.5rem;
     text-align: initial;
     @include media('<tablet'){
         font-size: 3.2rem;
@@ -39,6 +45,8 @@
     font-style: normal; 
 }
 .team__members {
+    padding-top: 7.25rem ;
+    padding-bottom: 7.2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,8 +65,7 @@
 .team__numbers {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 1.9rem;
+    gap: 1.7rem;
     @include media('<desktop'){
         flex-flow: row wrap;
         gap: 1rem;
@@ -67,9 +74,9 @@
 }
 .numbers__left {
     display: flex;
+    width: 703px;
     justify-content: space-between;
-    align-items: center;
-    gap: 1.9rem;
+    gap: 3rem;
     @include media('<desktop'){
         flex-flow: row wrap;
         gap: 1rem;
@@ -77,12 +84,10 @@
     }
 
 }
-.numbers__element {
-    width: 30rem;
-}
+
 .number {
     color: $c-yellow;
-    text-align: center;
+
     @include media('<tablet'){
         font-size: 4rem;
         line-height: 4.8rem;
@@ -92,18 +97,21 @@
 .numbers__text {
     font-size: 3.2rem;
     color: $c-silver;
-    text-align: center;
+    // text-align: center;
     @include media('<tablet'){
         font-size: 1.6rem;
         line-height: 2.4rem;
     }
 }
+
+.numbers__element{
+    max-width: 213px;
+}
 .numbers__right {
     width: 29.5rem;
-    height: 8rem;
     display: flex;
     gap:2rem;
-    align-items: center;
+    align-items: end;
     @include media('<tablet'){
         margin: 0 auto;
     }

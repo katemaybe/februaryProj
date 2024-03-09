@@ -1,8 +1,10 @@
 .footer__inner{
+    padding-top:7.25rem;
+    padding-bottom:7.25rem;
     @extend .container;
         display: flex;
         justify-content: space-between;
-        align-items: center; 
+        align-items: start; 
         flex-flow: row wrap;
         @include media('<desktop'){
             flex-flow: column;
@@ -18,8 +20,8 @@
     width: 22rem;
 
 }
-.logo {
-    padding: 5rem;
+.logo-bottom {
+    padding-bottom: 10rem ;
     float: left;
 }
 .footer__logo{
